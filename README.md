@@ -52,7 +52,7 @@ Available commands:
 ```
 ## Examples
 
-Choose a template with the -t option.
+Choose a template with the -t option (default is `modern`).
 
     `./bin/md2resume html --template blockish examples/source/sample.md examples/output/`
 
@@ -80,17 +80,17 @@ are based on descendant and adjacent selectors.
 
 __PLEASE NOTE__: The templates are compiled into the phar archive in the `./bin`
 folder. If you intend to edit the templates or add new ones, you'll need to run
-this application in the dev mode. See below for more information about doing
+this application in the dev mode. See Development section below for more information about doing
 this.
 
-## Feature Development
+## Development
 
-The application is deployed as a compiled phar file. In order to add new
-commands, you'll need to first install the dependencies:
+The application is deployed as a compiled phar file. In order to add
+or change features or templates, you'll need to first install the dependencies:
 
 * `composer install`
 
-After that, you can run the `md2resume_dev.php` file from the command line.
+After that, you can run `php md2resume_dev.php` the same as you would run `./bin/md2resume`.
 
 ## Building a Release
 
